@@ -1,4 +1,6 @@
-- name: Introduction
-  href: introduction.md
-- name: Getting Started
-  href: getting-started.md
+- name: Architectures
+  href: architectures/toc.yml
+- name: Data structures and algorithms
+  href: dsa/toc.yml
+- name: Data structures and algorithms in practice
+  href: dsa_practice/toc.yml

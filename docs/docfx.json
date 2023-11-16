@@ -17,7 +17,6 @@
         ]
       }
     ],
-    "output": "_site",
     "template": [
       "default",
       "modern"
@@ -25,8 +24,7 @@
     "globalMetadata": {
       "_appName": "Software Engineering",
       "_appTitle": "Software Engineering",
-      "_enableSearch": true,
-      "pdf": true
+      "_enableSearch": true
     }
   }
 }
