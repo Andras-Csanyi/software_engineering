@@ -87,7 +87,7 @@ jobs:
           
       - run: dotnet tool update -g docfx
       
-      - run: docfx Docs/docfx.json --output Docs/_site
+      - run: docfx docs/docfx.json --output docs/_site
       
       - name: Setup pages
         uses: actions/configure-pages@v3
@@ -97,7 +97,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN_FOR_SEMANTIC_RELEASE }}
         with:
-          path: 'Docs/_site'
+          path: 'docs/_site'
       
       - name: Deploy to Github Pages
         env:
