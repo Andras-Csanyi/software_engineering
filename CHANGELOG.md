@@ -1,3 +1,10 @@
+## [0.1.1](https://github.com/Andras-Csanyi/software_engineering/compare/0.1.0...0.1.1) (2023-11-16)
+
+
+### Bug Fixes
+
+* **docs:** path [#2](https://github.com/Andras-Csanyi/software_engineering/issues/2) ([46f5205](https://github.com/Andras-Csanyi/software_engineering/commit/46f520507bb1c3c5d32805771647736d55dfa6a2))
+
 # [0.1.0](https://github.com/Andras-Csanyi/software_engineering/compare/0.0.0...0.1.0) (2023-11-16)
 
 
