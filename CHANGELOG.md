@@ -1,3 +1,10 @@
+# [0.3.0](https://github.com/Andras-Csanyi/software_engineering/compare/0.2.0...0.3.0) (2023-11-18)
+
+
+### Features
+
+* new content [#5](https://github.com/Andras-Csanyi/software_engineering/issues/5) ([8b3bc7b](https://github.com/Andras-Csanyi/software_engineering/commit/8b3bc7b406fde198a3dfbbcd5c6582cd41290f9a))
+
 # [0.2.0](https://github.com/Andras-Csanyi/software_engineering/compare/0.1.1...0.2.0) (2023-11-16)
 
 
