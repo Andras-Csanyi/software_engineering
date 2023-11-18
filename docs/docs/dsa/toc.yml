@@ -6,6 +6,8 @@
   href: array.md
 - name: Dynamic size array
   href: dynamic_array.md
+- name: Linked list
+  href: linked_list.md
 - name: Stack
   href: stack.md
 - name: Queue
