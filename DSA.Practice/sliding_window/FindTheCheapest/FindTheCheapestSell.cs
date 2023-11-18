@@ -72,7 +72,8 @@ public class FindTheCheapestSell
 
             if (cheapestRecord is null)
             {
-                throw new Exception();
+                _testOutputHelper.WriteLine("Cheapest is empty");
+                continue;
             }
 
             string intervalDateString = $"{intervalStart}-{intervalStart.AddDays(intervalLengthsInDays)}";
