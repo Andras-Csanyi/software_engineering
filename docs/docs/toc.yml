@@ -4,3 +4,9 @@
   href: dsa/toc.yml
 - name: Data structures and algorithms in practice
   href: dsa_practice/toc.yml
+- name: Designing and system
+  href: designing_a_system/toc.yml
+- name: Tools
+  href: tools/toc.yml
+- name: Delivering software
+  href: delivering_software/toc.yml

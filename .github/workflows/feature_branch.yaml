@@ -43,3 +43,7 @@ jobs:
       - name: Test
         run: |
           dotnet test --no-restore --verbosity normal
+          
+      - run: dotnet tool update -g docfx
+
+      - run: docfx docs/docfx.json --output docs/_site
