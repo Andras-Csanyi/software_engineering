@@ -1,3 +1,10 @@
+## [0.4.1](https://github.com/Andras-Csanyi/software_engineering/compare/0.4.0...0.4.1) (2023-11-22)
+
+
+### Bug Fixes
+
+* adding stuff [#7](https://github.com/Andras-Csanyi/software_engineering/issues/7) ([2a48c3b](https://github.com/Andras-Csanyi/software_engineering/commit/2a48c3b3be1f987716d274e292b9ae29b28cfaf1))
+
 # [0.4.0](https://github.com/Andras-Csanyi/software_engineering/compare/0.3.0...0.4.0) (2023-11-22)
 
 
