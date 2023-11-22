@@ -1,6 +1,2 @@
 - name: Introduction
   href: toc.yaml
-- name: C#
-  href: c_sharp/toc.yml
-- name: Java
-  href: java/toc.yml
