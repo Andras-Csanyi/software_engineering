@@ -1,3 +1,10 @@
+# [0.4.0](https://github.com/Andras-Csanyi/software_engineering/compare/0.3.0...0.4.0) (2023-11-22)
+
+
+### Features
+
+* binary search sample code [#6](https://github.com/Andras-Csanyi/software_engineering/issues/6) ([884a3fc](https://github.com/Andras-Csanyi/software_engineering/commit/884a3fcbe0bad3cc153cc83d179b504f8b837872))
+
 # [0.3.0](https://github.com/Andras-Csanyi/software_engineering/compare/0.2.0...0.3.0) (2023-11-18)
 
 
