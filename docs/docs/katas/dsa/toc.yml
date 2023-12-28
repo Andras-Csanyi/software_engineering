@@ -1,7 +1,7 @@
 - name: Introduction
   href: introduction.md
 - name: Two pointers
-  href: two_pointers.md
+  href: two_pointers/toc.yml
 - name: Sliding window
   href: sliding_window.md
 - name: Depth-first-search
