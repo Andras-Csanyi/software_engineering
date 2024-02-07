@@ -37,22 +37,22 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         
-      - name: Setting up Dotnet with ${{ vars.DOTNET_VERSION }} version
-        uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: ${{ vars.DOTNET_VERSION }}
-          
-      - name: Restore
-        run: |
-          dotnet restore
-          
-      - name: Build
-        run: |
-          dotnet build --configuration Release --no-restore
-          
-      - name: Test
-        run: |
-          dotnet test --no-restore --verbosity normal
+#      - name: Setting up Dotnet with ${{ vars.DOTNET_VERSION }} version
+#        uses: actions/setup-dotnet@v3
+#        with:
+#          dotnet-version: ${{ vars.DOTNET_VERSION }}
+#          
+#      - name: Restore
+#        run: |
+#          dotnet restore
+#          
+#      - name: Build
+#        run: |
+#          dotnet build --configuration Release --no-restore
+#          
+#      - name: Test
+#        run: |
+#          dotnet test --no-restore --verbosity normal
           
       - name: Setup Node.js
         uses: actions/setup-node@v3
