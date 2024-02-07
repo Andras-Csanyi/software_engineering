@@ -1,3 +1,11 @@
+# [0.6.0](https://github.com/Andras-Csanyi/software_engineering/compare/0.5.0...0.6.0) (2024-02-07)
+
+
+### Features
+
+* **array:** array drawings [#10](https://github.com/Andras-Csanyi/software_engineering/issues/10) ([08dfc6f](https://github.com/Andras-Csanyi/software_engineering/commit/08dfc6f2610b58ab9d2f94829fd7a18c78289e46))
+* examples [#9](https://github.com/Andras-Csanyi/software_engineering/issues/9) ([3cf0bcc](https://github.com/Andras-Csanyi/software_engineering/commit/3cf0bcca18630bb040ff42e62c63071809cb80d5))
+
 # [0.5.0](https://github.com/Andras-Csanyi/software_engineering/compare/0.4.1...0.5.0) (2023-11-24)
 
 
