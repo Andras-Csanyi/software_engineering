@@ -191,4 +191,4 @@ When it comes to arrays worth to consider the followings:
 
 # Links
 
-- [!Video https://www.youtube.com/embed/YQs6IC-vgmo?si=X664x0z9ynWEJe8c]
+> [!Video https://www.youtube.com/embed/YQs6IC-vgmo?si=X664x0z9ynWEJe8c]
