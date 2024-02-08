@@ -1,2 +1,4 @@
-- name: Docs
+- name: Book
   href: docs/
+- name: Blog
+  href: blog/

@@ -10,7 +10,7 @@ As a matter of fact it is close in its behaviour too, but there are significant
 differences between the two.
 There is an article about ArrayList.
 
-![1, The computer's memory in a simplified format](media/array.drawio.png)
+![1, The computer's memory in a simplified format](images/array.drawio.png)
 
 The picture above shows a simplified version of the computer's memory. The
 single memory addresses are marked as boxes.
@@ -27,7 +27,7 @@ The values of the array are set to default (it depends on the language).
 An array always zero indexed, meaning the first element is always under the
 index 0.
 
-![2, The array is allocated in the memory](media/array_allocated.drawio.png)
+![2, The array is allocated in the memory](images/array_allocated.drawio.png)
 
 # Operations and their complexities
 
@@ -69,7 +69,7 @@ string_array[15] = "bar";
 The code above results what is displayed in the screenshot below.
 Pay attention to the zero indexing.
 
-![Adding elements to the array](media/array_adding2.drawio.png)
+![Adding elements to the array](images/array_adding2.drawio.png)
 
 Based on the above we can say that the time complexity of adding an element to an array is 
 always the same: **constant**.
@@ -100,9 +100,9 @@ into the `6th` index and everything after this index will be pushed right.
 Since the array is already full there is no place for the last item to be shifted to.
 It is either a silent data loss or some type of error message from the language runtime.
 
-![Every index has some value in the index we are going to insert](media/array_insert_start.drawio.png)
+![Every index has some value in the index we are going to insert](images/array_insert_start.drawio.png)
 
-![New value is inserted and there is one which does not have place](media/array_insert_inserted.drawio.png)
+![New value is inserted and there is one which does not have place](images/array_insert_inserted.drawio.png)
 
 As a summary, we can say that in worst case the `insert` operation requires going through the
 array once.
@@ -143,14 +143,14 @@ The `delete` operation sets the value at the designated index to array default, 
 many cases `null`.
 The screenshots show this process.
 
-![The 6th index of the array has value](media/array_delete_start.drawio.png)
+![The 6th index of the array has value](images/array_delete_start.drawio.png)
 
 ```java
 string[] string_array = new[20];
 string_array[6] = null;
 ```
 
-![The 6th index is deleted](media/array_deleted.drawio.png)
+![The 6th index is deleted](images/array_deleted.drawio.png)
 
 ## Remove an element
 
