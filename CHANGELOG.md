@@ -1,3 +1,10 @@
+## [0.6.2](https://github.com/Andras-Csanyi/software_engineering/compare/0.6.1...0.6.2) (2024-02-08)
+
+
+### Bug Fixes
+
+* blog test [#12](https://github.com/Andras-Csanyi/software_engineering/issues/12) ([c8bd6a9](https://github.com/Andras-Csanyi/software_engineering/commit/c8bd6a90bdbd96925fa1e01d1c6db8cd5a7dc6a9))
+
 ## [0.6.1](https://github.com/Andras-Csanyi/software_engineering/compare/0.6.0...0.6.1) (2024-02-08)
 
 
