@@ -1,3 +1,7 @@
+---
+uid: array_article
+---
+
 # Array
 
 Array is a data structure to store something in the computer's memory and do
@@ -38,15 +42,11 @@ index 0.
 | Search    | `O(N)` - linear   |
 | Delete    | `O(1)` - constant |
 
----
-**Note**
-
-Some computer science lingo clarification comes here:
-
-`Adding`, in general, means adding a new element to a list/array as last item. This is also called as append.
-While `insert` means the item will be added to the designated index and all item right to it will be
-shifted right.
----
+> [!Note]
+> Some computer science lingo clarification comes here:
+> `Adding`, in general, means adding a new element to a list/array as last item. This is also called as append.
+> While `insert` means the item will be added to the designated index and all item right to it will be
+> shifted right.
 
 ## Adding elements
 
@@ -121,20 +121,14 @@ But, the fact is that in worst case every element has to be checked.
 It means that the time complexity of the search operation is **linear** while the space
 complexity is **constant**.
 
----
-**Note**
-
-Some computer science lingo clarification here:
-
-There is no similarly distinct meaning difference between `delete` and `remove` as it was
-pointed out in the case of `insert` and `add`, but making some difference still needed.
-
-`Remove`s meaning includes that the place where the value was stored also gone meaning
-all the elements right to it will be shifted to the left.
-`Delete` does not have an extra meaning like this.
-The value is deleted, but its container not.
-
----
+> [!Note]
+> Some computer science lingo clarification here:
+> There is no similarly distinct meaning difference between `delete` and `remove` as it was
+> pointed out in the case of `insert` and `add`, but making some difference still needed.
+> `Remove`s meaning includes that the place where the value was stored also gone meaning
+> all the elements right to it will be shifted to the left.
+> `Delete` does not have an extra meaning like this.
+> The value is deleted, but its container not.
 
 ## Delete an element
 
@@ -152,14 +146,49 @@ string_array[6] = null;
 
 ![The 6th index is deleted](images/array_deleted.drawio.png)
 
+In order to delete, override, and element in the array takes constant time since we know under
+which index the element is placed in the array.
+So, we can go there and puff, eliminate it.
+
 ## Remove an element
 
-The remove operation is similar to `Insert`. It also has 3 variations:
+The remove operation has, similarly to `Insert`, 3 variations:
 
 - Remove an element from the first place and shift left everything after the deleted element
 - Remove an element from the middle and shift left everything after the element
 - Remove an item from the last position, here there is no shift only adding default value
 
-# C# implementation
+The screenshots below show the before and after state of the `remove` operation.
 
-# Java implementation
+![Array before removing the item under index 7](images/array_remove_start.drawio.png)
+
+When the item under index `7` in the array gets removed all the elements following it
+needs to be shifted left.
+The last slot of the array, index `19`, will have default value.
+
+![Array after the item under index 7 has been removed](images/array_remove_removed.drawio.png)
+
+The consequence of the above is the same as it is in the case of `insert` operation:
+another array, or some extra space, is needed to shuffle the items.
+In worst case another array with the same size is needed and the array has to be scanned fully.
+For this reason the time complexity of removing an element is linear and the space complexity 
+of the operation too.
+
+# Considerations
+
+When it comes to arrays worth to consider the followings:
+
+- accessing elements is superfast, for this we have to know under which index is placed the 
+  element we wish to work with
+- searching can be slow
+- in general arrays don't have as rich api as, for example, an [ArrayList (Java)](https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html) or a [List (C#)](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-8.0)
+- changing and managing the size of arrays is error-prone, slow and requires additional space
+- the contiguous nature of array is a two-edged sword:
+  - it can give memory pressure to the system which has to find a place in the memory
+  where the array can be fit. This can be made worse by some size management.
+  - due to cache locality 1, arrays can be faster than hashmaps if the array size is small,
+  but this is a corner case, 2, in a streaming use case it can be advantageous
+
+# Links
+
+- [!Video https://www.youtube.com/embed/YQs6IC-vgmo?si=X664x0z9ynWEJe8c]
