@@ -1,3 +1,10 @@
+## [0.6.4](https://github.com/Andras-Csanyi/software_engineering/compare/0.6.3...0.6.4) (2024-02-08)
+
+
+### Bug Fixes
+
+* embedded video link [#14](https://github.com/Andras-Csanyi/software_engineering/issues/14) ([5589a31](https://github.com/Andras-Csanyi/software_engineering/commit/5589a31ee0beade06e880aba24afe230041fdaa2))
+
 ## [0.6.3](https://github.com/Andras-Csanyi/software_engineering/compare/0.6.2...0.6.3) (2024-02-08)
 
 
