@@ -1,3 +1,10 @@
+## [0.6.5](https://github.com/Andras-Csanyi/software_engineering/compare/0.6.4...0.6.5) (2024-02-12)
+
+
+### Bug Fixes
+
+* rename docs folder to software_engineering [#15](https://github.com/Andras-Csanyi/software_engineering/issues/15) ([f4f36d1](https://github.com/Andras-Csanyi/software_engineering/commit/f4f36d1e5b1c0e9fd1f6e8efbb0492122f4f713f))
+
 ## [0.6.4](https://github.com/Andras-Csanyi/software_engineering/compare/0.6.3...0.6.4) (2024-02-08)
 
 
