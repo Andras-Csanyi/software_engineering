@@ -4,6 +4,8 @@
   href: architectures/toc.yml
 - name: Data structures and algorithms
   href: dsa/toc.yml
+- name: DSA Implementations
+  href: dsa_implementations/toc.yml
 - name: Designing and system
   href: designing_a_system/toc.yml
 - name: Tools
