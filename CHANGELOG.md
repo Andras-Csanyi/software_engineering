@@ -1,3 +1,11 @@
+# [0.7.0](https://github.com/Andras-Csanyi/software_engineering/compare/0.6.5...0.7.0) (2024-03-31)
+
+
+### Features
+
+* array list [#16](https://github.com/Andras-Csanyi/software_engineering/issues/16) ([c3c581e](https://github.com/Andras-Csanyi/software_engineering/commit/c3c581e1218c89cb762b04e82b32ad663569e37f))
+* arraylist, dsa introduction ([886ba49](https://github.com/Andras-Csanyi/software_engineering/commit/886ba49aa8c6e6ab07e92f423249c7795fbcf19d))
+
 ## [0.6.5](https://github.com/Andras-Csanyi/software_engineering/compare/0.6.4...0.6.5) (2024-02-12)
 
 
