@@ -5,95 +5,64 @@ uid: array_article
 # Array
 
 Array is a data structure to store something in the computer's memory and do
-somethign to it. 
+something to it.
 An array is like a list with some limitations and quirky things.
-In computer science terminology the word array always refers to the data
-structure will be described in this article.
-There is the ArrayList which in its name very close to array.
-As a matter of fact it is close in its behaviour too, but there are significant
-differences between the two.
-There is an article about ArrayList.
 
 ![1, The computer's memory in a simplified format](images/array.drawio.png)
 
 The picture above shows a simplified version of the computer's memory. The
 single memory addresses are marked as boxes.
 
-An array represents a contiguous space in the computer's memory.
-In practice, it means the elements of the array are placed next to each other in
-the computer's memory.
-When the code `new [10]` will be executed the language runtime claims its need
-for a certain amount contiguous memory.
+An array represents a contiguous space in the computer's memory meaning when the array is
+initialized a certain part of the memory is dedicated to the array.
+The size of the box depends on the type.
+In practice, it means we say the computer the following:
+`"Give me memory space for 20 int type and I'll refer to myIntArray name"`.
+
+```cs
+int[] myIntArray = new int[20];
+```
 
 An array is always fixed size, and its size has to be provided at initialization.
-The values of the array are set to default (it depends on the language).
+The values of the array are set to highly probably null or default value of the type.
 
 An array always zero indexed, meaning the first element is always under the
 index 0.
 
 ![2, The array is allocated in the memory](images/array_allocated.drawio.png)
 
-# Operations and their complexities
+# Operations and their complexities in a single-thread environment
 
-| Operation | Big O notation    |
-|-----------|-------------------|
-| Add       | `O(1)` - constant |
-| Insert    | `O(N)` - linear   |
-| Search    | `O(N)` - linear   |
-| Delete    | `O(1)` - constant |
+| Operation                | Time Complexity | Space complexity |
+|--------------------------|-----------------|------------------|
+| [Add/Append](#addappend) | `O(N)`          | `O(N)`           |
+| [Insert](#insert)        | `O(N)`          | `O(N)`           |
+| [Overwrite](#overwrite)  | `O(1)`          | `O(1)`           |
+| [Remove](#remove)        | `O(N)`          | `O(N)`           |
+| [Delete](#delete)        | `O(1)`          | `O(1)`           |
+| [Search](#search)        | `O(N)`          | `O(1)`           |
 
-> [!Note]
-> Some computer science lingo clarification comes here:
-> `Adding`, in general, means adding a new element to a list/array as last item. This is also called as append.
-> While `insert` means the item will be added to the designated index and all item right to it will be
-> shifted right.
+## Add/Append
 
-## Adding elements
+Since the array is fixed size [add/append](introduction.md#addappend) operation includes
+resizing the array.
+The software engineer has to ensure that the resizing is executed successfully and contains
+the elements of the array, and the new, added, element is added as last one.
+This, from practical point of view, does not make a lot of sense, especially when the
+language, for example java or c# provides a variable size array data structure.
 
-In reality there is no such thing adding an element to an array.
-Moreover, there is no `append` or similar operation on an array in, for
-example, java.
-
-The add operation, in reality, overwrites the value at the designated place.
-The index marking in which position the given element will be added has to be
-always provided like in the example below (java):
-
-```java
-// initialization of the array
-strin[] string_array = new[20];
-// adding value 14 to the index 3 place in the array
-string_array[3] = "asd";
-string_array[4] = "foo";
-string_array[15] = "bar";
-```
-The code above results what is displayed in the screenshot below.
-Pay attention to the zero indexing.
-
-![Adding elements to the array](images/array_adding2.drawio.png)
-
-Based on the above we can say that the time complexity of adding an element to an array is 
-always the same: **constant**.
+Add/Append operation **time complexity** is due to resize is `O(N)` and **space complexity** is
+`O(N)` too as it requires allocating a new array.
 
 ## Insert
 
-The insert operation has 3 versions:
-
-- insert as first element and everything shifts right
-- insert somewhere in the middle and everything right to it shifts right
-- insert as last element and nothing gets shifted
-
-An insert operation consists of two distinct operations:
-
-- take the values after the designated index and shift them right
-- insert the value to the place
-
-Having the two operations above we can insert a new element into an array.
-
-The insert operation due to fixed nature of the arrays is a risky one.
-It may cause data loss or unwanted exceptions.
-
-The other problem comes with `insert` is that shifting the original array elements requires
-another array and by that increasing the space complexity.
+The key in the [insert](introduction.md#insert) operation is that 1, the size of the data
+structure increases and 2,
+every item following the index to where the new item is inserted will be shifted right
+by one.
+As a result the software engineer has to pay attention to keep the original order of the
+elements, adding a new one, adding the shifted elements and that the new array has an
+increased size.
 
 The two screenshots picture an insert operations where the `"five-2"` value will be inserted
 into the `6th` index and everything after this index will be pushed right.
@@ -111,52 +80,38 @@ original array, in worst case.
 As a conclusion, the time complexity of the `insert` operation is **linear** in worst case.
 The space complexity is also **linear**.
 
-## Searching for an element
+## Overwrite
 
-Finding an element in the array means that every item in the array needs to be checked
-if fits for the search criteria.
-In general, it requires a `for` or `foreach` loop or something similar from the fancy
-lamba functions.
-But, the fact is that in worst case every element has to be checked.
-It means that the time complexity of the search operation is **linear** while the space
-complexity is **constant**.
+From usage point of view when the code consist of `myIntArray[2] = 10` it might seem we are
+adding the `10` to the array, but in reality we overwrite whatever is under the index `2`
+by the value of `10`.
 
-> [!Note]
-> Some computer science lingo clarification here:
-> There is no similarly distinct meaning difference between `delete` and `remove` as it was
-> pointed out in the case of `insert` and `add`, but making some difference still needed.
-> `Remove`s meaning includes that the place where the value was stored also gone meaning
-> all the elements right to it will be shifted to the left.
-> `Delete` does not have an extra meaning like this.
-> The value is deleted, but its container not.
+A real [add](introduction.md#addappend) operation does not exist for an array without resize.
 
-## Delete an element
+The code below show array initialization and that values under `3`, `4`, and `15` are
+overwritten by the provided values.
 
-In reality, there is no such thing to remove an element from an array.
-The `delete` operation sets the value at the designated index to array default, which in
-many cases `null`.
-The screenshots show this process.
-
-![The 6th index of the array has value](images/array_delete_start.drawio.png)
-
-```java
-string[] string_array = new[20];
-string_array[6] = null;
+```c#
+// initialization of the array
+strin[] string_array = new[20];
+// adding value 14 to the index 3 place in the array
+string_array[3]="asd";
+string_array[4]="foo";
+string_array[15]="bar";
 ```
 
-![The 6th index is deleted](images/array_deleted.drawio.png)
+The code above results what is displayed in the screenshot below.
+Pay attention to the zero indexing.
 
-In order to delete, override, and element in the array takes constant time since we know under
-which index the element is placed in the array.
-So, we can go there and puff, eliminate it.
+![Adding elements to the array](images/array_adding2.drawio.png)
 
-## Remove an element
+Overwrite operation is a **constant** time operation since we know where is the value we
+want to work with within the array (index).
 
-The remove operation has, similarly to `Insert`, 3 variations:
+## Remove
 
-- Remove an element from the first place and shift left everything after the deleted element
-- Remove an element from the middle and shift left everything after the element
-- Remove an item from the last position, here there is no shift only adding default value
+Remove operation is about removing the designated item and shifting all following elements
+in the array to left by one.
 
 The screenshots below show the before and after state of the `remove` operation.
 
@@ -168,26 +123,59 @@ The last slot of the array, index `19`, will have default value.
 
 ![Array after the item under index 7 has been removed](images/array_remove_removed.drawio.png)
 
-The consequence of the above is the same as it is in the case of `insert` operation:
-another array, or some extra space, is needed to shuffle the items.
-In worst case another array with the same size is needed and the array has to be scanned fully.
-For this reason the time complexity of removing an element is linear and the space complexity 
-of the operation too.
+The worst case **time complexity** is `O(N)` because every element in the array need to be
+moved.
+The worst case **space complexity** is `O(N)` because the resizing portion of the operation
+requires the allocation of another, similar size array.
+
+## Delete
+
+In reality, there is no such thing to remove an element from an array.
+The `delete` operation sets the value at the designated index to array default, which in
+many cases `null`.
+The screenshots show this process.
+
+![The 6th index of the array has value](images/array_delete_start.drawio.png)
+
+```java
+string[] string_array = new[20];
+
+string_array[6]=null;
+```
+
+![The 6th index is deleted](images/array_deleted.drawio.png)
+
+The **time complexity** of this operation is `O(1)` since we know the index of the element we
+want to delete.
+The **space complexity** of this operation is also `O(1)` because overwriting the element
+in the array does not require extra memory space.
+
+## Searching for an element
+
+Finding an element in the array means that every item in the array needs to be checked
+if fits for the search criteria.
+In general, it requires a `for` or `foreach` loop or something similar from the fancy
+lamba functions.
+But, the fact is that in worst case every element has to be checked.
+It means that the time complexity of the search operation is **linear** while the space
+complexity is **constant**.
 
 # Considerations
 
 When it comes to arrays worth to consider the followings:
 
-- accessing elements is superfast, for this we have to know under which index is placed the 
+- accessing elements is a fast operation, for this we have to know under which index is placed the
   element we wish to work with
 - searching can be slow
-- in general arrays don't have as rich api as, for example, an [ArrayList (Java)](https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html) or a [List (C#)](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-8.0)
+- in general arrays don't have as rich api as, for example,
+  an [ArrayList (Java)](https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html) or
+  a [List (C#)](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-8.0)
 - changing and managing the size of arrays is error-prone, slow and requires additional space
 - the contiguous nature of array is a two-edged sword:
-  - it can give memory pressure to the system which has to find a place in the memory
-  where the array can be fit. This can be made worse by some size management.
-  - due to cache locality 1, arrays can be faster than hashmaps if the array size is small,
-  but this is a corner case, 2, in a streaming use case it can be advantageous
+    - it can give memory pressure to the system which has to find a place in the memory
+      where the array can be fit. This can be made worse by some size management.
+    - due to cache locality 1, arrays can be faster than hashmaps if the array size is small,
+      but this is a corner case, 2, in a streaming use case it can be advantageous
 
 # Links
 
