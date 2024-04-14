@@ -1,3 +1,10 @@
+## [0.8.1](https://github.com/Andras-Csanyi/software_engineering/compare/0.8.0...0.8.1) (2024-04-14)
+
+
+### Bug Fixes
+
+* **java:** fixing menu [#19](https://github.com/Andras-Csanyi/software_engineering/issues/19) ([d7c6759](https://github.com/Andras-Csanyi/software_engineering/commit/d7c6759dbfeae8e0769aae1bfc9d828204696199))
+
 # [0.8.0](https://github.com/Andras-Csanyi/software_engineering/compare/0.7.0...0.8.0) (2024-04-14)
 
 
