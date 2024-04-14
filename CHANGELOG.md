@@ -1,3 +1,10 @@
+## [0.8.2](https://github.com/Andras-Csanyi/software_engineering/compare/0.8.1...0.8.2) (2024-04-14)
+
+
+### Bug Fixes
+
+* code snippet [#20](https://github.com/Andras-Csanyi/software_engineering/issues/20) ([0ba1394](https://github.com/Andras-Csanyi/software_engineering/commit/0ba13949c23052eeec4bfd4ca5865f6451634623))
+
 ## [0.8.1](https://github.com/Andras-Csanyi/software_engineering/compare/0.8.0...0.8.1) (2024-04-14)
 
 
