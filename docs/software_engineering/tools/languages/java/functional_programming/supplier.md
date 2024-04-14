@@ -1,3 +1,7 @@
+---
+uid: JavaFunctionalProgrammingSupplierInterface
+---
+
 # Supplier functional interface
 
 ## Source
