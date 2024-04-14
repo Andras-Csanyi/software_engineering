@@ -1,3 +1,10 @@
+# [0.8.0](https://github.com/Andras-Csanyi/software_engineering/compare/0.7.0...0.8.0) (2024-04-14)
+
+
+### Features
+
+* **java:** functional programming - supplier [#18](https://github.com/Andras-Csanyi/software_engineering/issues/18) ([6350ed5](https://github.com/Andras-Csanyi/software_engineering/commit/6350ed5353f45ce71b526c1a1917b09d6194396c))
+
 # [0.7.0](https://github.com/Andras-Csanyi/software_engineering/compare/0.6.5...0.7.0) (2024-03-31)
 
 
