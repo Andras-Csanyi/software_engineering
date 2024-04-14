@@ -59,10 +59,10 @@ In the provided code we are going to add few suppliers to a class via its builde
 and when it is built these suppliers will be executed and the result printed out.
 
 The interface
-[code-java[](../../../../../../langs/java/src/main/java/com/andrascsanyi/functional_programming/supplier/Name.java)]
+[!code-java[](../../../../../../langs/java/src/main/java/com/andrascsanyi/functional_programming/supplier/Name.java)]
 
 The implementation
-[code-java[](../../../../../../langs/java/src/main/java/com/andrascsanyi/functional_programming/supplier/NameImpl.java)]
+[!code-java[](../../../../../../langs/java/src/main/java/com/andrascsanyi/functional_programming/supplier/NameImpl.java)]
 
 Test and usage
-[code-java[](../../../../../../langs/java/src/test/java/com/andrascsanyi/functional_programming/supplier/NameTest.java)]
+[!code-java[](../../../../../../langs/java/src/test/java/com/andrascsanyi/functional_programming/supplier/NameTest.java)]
