@@ -1,3 +1,10 @@
+# [0.9.0](https://github.com/Andras-Csanyi/software_engineering/compare/0.8.2...0.9.0) (2024-04-15)
+
+
+### Features
+
+* supplier c sharp [#21](https://github.com/Andras-Csanyi/software_engineering/issues/21) ([4962d91](https://github.com/Andras-Csanyi/software_engineering/commit/4962d91400372536afa14133a29cfc078fdf3f6b))
+
 ## [0.8.2](https://github.com/Andras-Csanyi/software_engineering/compare/0.8.1...0.8.2) (2024-04-14)
 
 
