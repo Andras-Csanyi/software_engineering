@@ -4,6 +4,8 @@ uid: JavaFunctionalProgrammingSupplierInterface
 
 # Supplier functional interface
 
+[!INCLUDE [supplier.md](../../../programming_paradigms/functional/supplier.md)]
+
 ## Source
 
 The interface can be found [here](https://github.com/openjdk/jdk/blob/master/src/java.base/share/classes/java/util/function/Supplier.java).
@@ -39,19 +41,6 @@ public interface Supplier<T> {
     - there are implementations in the Collector class also using `Supplier<T>` interface.
 - The [Stream](https://github.com/openjdk/jdk/blob/master/src/java.base/share/classes/java/util/stream/Stream.java) interface also have a few methods expecting `Supplier<T>` argument, like:
     - `generate`
-
-## Use cases
-
-### In general
-
-When you need to generate, provide or supply(!) values without any input `Supplier<T>`
-interface is your friend.
-
-### Code execution needs to be deferred
-
-- [Article](https://www.baeldung.com/java-callable-vs-supplier#supplier)
-
-### Chaining functions in CompleatableFuture
 
 ## Fun
 
