@@ -1,4 +1,4 @@
-- name: Book
-  href: software_engineering/
 - name: Blog
   href: blog/
+- name: Book
+  href: software_engineering/
