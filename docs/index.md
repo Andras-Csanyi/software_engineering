@@ -1,3 +1,1 @@
---
-redirect_url: blog/latest.html
---
+This is the latest blog entry.
