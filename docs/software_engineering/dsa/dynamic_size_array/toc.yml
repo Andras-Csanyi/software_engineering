@@ -1,0 +1,4 @@
+- name: Dynamic Size Array
+- href: theory.md
+- name: Implementation
+- href: impl/toc.yml

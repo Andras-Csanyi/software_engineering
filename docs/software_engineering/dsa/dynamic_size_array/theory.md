@@ -35,7 +35,7 @@ In case of java the default array size is [10](https://github.com/AdoptOpenJDK/o
 [50%](https://github.com/AdoptOpenJDK/openjdk-jdk11/blob/master/src/java.base/share/classes/java/util/ArrayList.java#L254).
 The [implementation](https://github.com/AdoptOpenJDK/openjdk-jdk11/blob/master/src/java.base/share/classes/java/util/ArrayList.java#L236) of array size increase is no different than we saw in the array article: the elements are copied to a new, increased size, array.
 
-The benefits are that these methods are provided by the language maintaners and these functionalities
+The benefits are that these methods are provided by the language maintainers and these functionalities
 are widely tested and representing industry standards.
 
 ## Rich Api
@@ -58,7 +58,7 @@ The java array list api is available [here](https://github.com/AdoptOpenJDK/open
 # Operations and their complexities in a single-thread environment
 
 | Operation                | Time Complexity            | Space complexity           |
-|--------------------------|----------------------------|----------------------------|
+| ------------------------ | -------------------------- | -------------------------- |
 | [Add/Append](#addappend) | `O(1)` occasionally `O(N)` | `O(1)` occasionally `O(N)` |
 | [Insert](#insert)        | `O(N)`                     | `O(N)`                     |
 | [Overwrite](#overwrite)  | `O(1)`                     | `O(1)`                     |

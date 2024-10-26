@@ -9,10 +9,14 @@ namespace AndrasCsanyi.DataStructuresAndAlgs;
 /// <typeparam name="T">The type of the items in the list.</typeparam>
 public interface IList<T>
 {
+    // add method snippet start
+
     /// <summary>
     ///     Adds a type T elem to the list. The place of the item is after the last item in the list.
     /// </summary>
     /// <param name="item">The item to be added.</param>
     /// <returns>Returns the list having the added element.</returns>
     T Add(T item);
+
+    // add method snippet end
 }
