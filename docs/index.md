@@ -1,3 +1,3 @@
 ---
-redirect_url: blog/blog.md
+redirect_url: blog/blog.html
 ---
