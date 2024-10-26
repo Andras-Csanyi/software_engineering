@@ -5,7 +5,7 @@
 - name: Array
   href: array.md
 - name: Dynamic size array
-  href: dynamic_array.md
+  href: dynamic_size_array/toc.yml
 - name: Linked list
   href: linked_list.md
 - name: Stack
