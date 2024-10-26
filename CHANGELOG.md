@@ -1,3 +1,10 @@
+# [0.11.0](https://github.com/Andras-Csanyi/software_engineering/compare/0.10.1...0.11.0) (2024-10-26)
+
+
+### Features
+
+* Starting With NeoVim Article [#36](https://github.com/Andras-Csanyi/software_engineering/issues/36) ([bd1c887](https://github.com/Andras-Csanyi/software_engineering/commit/bd1c887ffb06d5493a9c64aaf350ef2d45528f04))
+
 ## [0.10.1](https://github.com/Andras-Csanyi/software_engineering/compare/0.10.0...0.10.1) (2024-10-26)
 
 
