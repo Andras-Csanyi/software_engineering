@@ -2,29 +2,28 @@
   "build": {
     "content": [
       {
-        "files": [
-          "**/*.{md,yml}"
-        ],
-        "exclude": [
-          "_site/**"
-        ]
+        "files": ["**/*.{md,yml}"],
+        "exclude": ["_site/**"]
       }
     ],
     "resource": [
       {
-        "files": [
-          "**/images/**"
-        ]
+        "files": ["**/images/**"]
       }
     ],
-    "template": [
-      "default",
-      "modern"
-    ],
+    "template": ["default", "modern"],
     "globalMetadata": {
       "_appName": "Software Engineering",
       "_appTitle": "Software Engineering",
-      "_enableSearch": true
+      "_enableSearch": true,
+      "_disableContribution": true,
+      "_appFooter": ""
+    },
+    "fileMetadata": {
+      "_appTitle": {
+        "blog/**/*.md": "blog",
+        "software_engineering/**/*.md": "book"
+      }
     }
   }
 }
