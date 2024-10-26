@@ -1,3 +1,10 @@
+# [0.12.0](https://github.com/Andras-Csanyi/software_engineering/compare/0.11.0...0.12.0) (2024-10-26)
+
+
+### Features
+
+* implementation of a dynamic size array article [#37](https://github.com/Andras-Csanyi/software_engineering/issues/37) ([789e4fb](https://github.com/Andras-Csanyi/software_engineering/commit/789e4fb775c28cb72a0f42300b98e554383fbe6f))
+
 # [0.11.0](https://github.com/Andras-Csanyi/software_engineering/compare/0.10.1...0.11.0) (2024-10-26)
 
 
