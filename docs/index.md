@@ -1,3 +1,3 @@
 ---
-redirect_url: blog/toc.yml
+redirect_url: blog/blog.md
 ---
