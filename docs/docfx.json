@@ -1,9 +1,21 @@
 {
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": ["DataStructuresAndAlgs/DataStructuresAndAlgs.csproj"],
+          "src": "../langs/csharp/Core/"
+        }
+      ],
+      "dest": "dsaapi",
+      "outputFormat": "apiPage"
+    }
+  ],
   "build": {
     "content": [
       {
         "files": ["**/*.{md,yml}"],
-        "exclude": ["_site/**"]
+        "exclude": ["_site/**", "obj/**"]
       }
     ],
     "resource": [
@@ -18,6 +30,11 @@
       "_enableSearch": true,
       "_disableContribution": true,
       "_appFooter": ""
+    },
+    "sitemap": {
+      "baseUrl": "https://andrascsanyi.com",
+      "priority": 0.5,
+      "changefreq": "daily"
     },
     "fileMetadata": {
       "_appTitle": {
