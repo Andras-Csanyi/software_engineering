@@ -1,3 +1,10 @@
+## [0.12.1](https://github.com/Andras-Csanyi/software_engineering/compare/0.12.0...0.12.1) (2024-10-26)
+
+
+### Bug Fixes
+
+* context fixes [#38](https://github.com/Andras-Csanyi/software_engineering/issues/38) ([1eab353](https://github.com/Andras-Csanyi/software_engineering/commit/1eab35337888a23f6f63d3bddbd5fcab859a6907))
+
 # [0.12.0](https://github.com/Andras-Csanyi/software_engineering/compare/0.11.0...0.12.0) (2024-10-26)
 
 
