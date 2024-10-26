@@ -1,3 +1,10 @@
+# [0.10.0](https://github.com/Andras-Csanyi/software_engineering/compare/0.9.0...0.10.0) (2024-10-26)
+
+
+### Features
+
+* the first blog entry [#34](https://github.com/Andras-Csanyi/software_engineering/issues/34) ([fc95b63](https://github.com/Andras-Csanyi/software_engineering/commit/fc95b639a53581277564f570f684bf70b4409ab2))
+
 # [0.9.0](https://github.com/Andras-Csanyi/software_engineering/compare/0.8.2...0.9.0) (2024-04-15)
 
 
