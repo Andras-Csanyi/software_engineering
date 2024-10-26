@@ -1,7 +1,3 @@
 ---
-title: the last entry
-description: this is always the last entry in the blog
+redirect_url: blog/toc.yml
 ---
-
-This is the latest blog entry.
-This is the updated version of latest entry.
