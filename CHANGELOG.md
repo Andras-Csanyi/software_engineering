@@ -1,3 +1,10 @@
+## [0.13.4](https://github.com/Andras-Csanyi/software_engineering/compare/0.13.3...0.13.4) (2024-10-27)
+
+
+### Bug Fixes
+
+* fixing shit [#47](https://github.com/Andras-Csanyi/software_engineering/issues/47) ([41b1969](https://github.com/Andras-Csanyi/software_engineering/commit/41b1969e11e82fc6e02ab76ad79faf7a050d8381))
+
 ## [0.13.3](https://github.com/Andras-Csanyi/software_engineering/compare/0.13.2...0.13.3) (2024-10-27)
 
 
