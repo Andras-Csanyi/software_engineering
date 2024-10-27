@@ -3,7 +3,7 @@ title: Interface IList<T>
 body:
 - api1: Interface IList<T>
   id: AndrasCsanyi_DataStructuresAndAlgs_IList_1
-  src: https://github.com/Andras-Csanyi/software_engineering/blob/article3/langs/csharp/Core/DataStructuresAndAlgs/IList.cs#L10
+  src: https://github.com/Andras-Csanyi/software_engineering/blob/blog13/docs/src/csharp/Core/DataStructuresAndAlgs/IList.cs#L10
   metadata:
     uid: AndrasCsanyi.DataStructuresAndAlgs.IList`1
     commentId: T:AndrasCsanyi.DataStructuresAndAlgs.IList`1
@@ -30,7 +30,7 @@ body:
 - h2: Methods
 - api3: Add(T)
   id: AndrasCsanyi_DataStructuresAndAlgs_IList_1_Add__0_
-  src: https://github.com/Andras-Csanyi/software_engineering/blob/article3/langs/csharp/Core/DataStructuresAndAlgs/IList.cs#L19
+  src: https://github.com/Andras-Csanyi/software_engineering/blob/blog13/docs/src/csharp/Core/DataStructuresAndAlgs/IList.cs#L19
   metadata:
     uid: AndrasCsanyi.DataStructuresAndAlgs.IList`1.Add(`0)
     commentId: M:AndrasCsanyi.DataStructuresAndAlgs.IList`1.Add(`0)

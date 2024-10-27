@@ -16,18 +16,7 @@ suppliers are `Func<TResult>` delegates.
 The delegates are invoked in the `Print` method.
 
 The interface where the properties are `Func<TResult>` delegate types.
-[!code-csharp[](../../../../../../langs/csharp/SoftwareEngineering/FunctionalProgramming/Supplier/IName.cs)]
 
 The implementation of the `IName` interface.
-[!code-csharp[](../../../../../../langs/csharp/SoftwareEngineering/FunctionalProgramming/Supplier/Name.cs)]
 
 A test where the `IName` is instantiated and executed.
-[!code-csharp[](../../../../../../langs/csharp/SoftwareEngineering/FunctionalProgramming/Supplier/SupplierTest.cs)]
-
-
-
-
-
-
-
-

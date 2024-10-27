@@ -10,4 +10,4 @@ This is how I learn.
 The journey also includes providing the theory and the practice parts.
 The book section already have a few good drafts.
 
-The first one is the [dynamically sized array](software_engineering/dsa/dynamic_size_array/theory.html).
+The first one is the [dynamically sized array](/software_engineering/dsa/dynamic_size_array/theory.html).
