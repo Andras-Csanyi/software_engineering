@@ -17,9 +17,7 @@ My plan was to have a code with tests and after shaping it in java correctly.
 
 My mental state at the end of the week is described perfectly by the following tweet.
 
-<blockquote class="twitter-tweet">
-  <a href="https://x.com/csanyi_andras/status/1849850404307083592"></a>
-</blockquote>
+![My mental state](media/twitter.png)
 
 # Story
 
@@ -68,7 +66,7 @@ The snippet below shows this solution.
 
 [!code-java[](src/demo/src/test/java/com/example/demo/Logic.java#L32-L42)]
 
-# Lessons earned
+# Lessons learned
 
 For me the lesson is that I need to further enhance my skills and abilities to transform the
 real world problems to java specific solutions instead of being satisfied with an average
