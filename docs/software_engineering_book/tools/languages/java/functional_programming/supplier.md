@@ -14,7 +14,7 @@ The interface can be found [here](https://github.com/openjdk/jdk/blob/master/src
 
 @FunctionalInterface
 public interface Supplier<T> {
-    
+
     /**
      * Gets a result.
      *
@@ -29,18 +29,18 @@ public interface Supplier<T> {
 - JDK has type specific suppliers like below, however if you take a look at the source code
   you'll see that these type specific suppliers are not inherited from `Supplier<T>`,
   rather they have the same concept but the result type is specific instead of generic.
-    - [long supplier](https://github.com/openjdk/jdk/blob/master/src/java.base/share/classes/java/util/function/LongSupplier.java)
-    - [boolean supplier](https://github.com/openjdk/jdk/blob/master/src/java.base/share/classes/java/util/function/BooleanSupplier.java)
-    - [double supplier](https://github.com/openjdk/jdk/blob/master/src/java.base/share/classes/java/util/function/DoubleSupplier.java)
-    - [int supplier](https://github.com/openjdk/jdk/blob/master/src/java.base/share/classes/java/util/function/IntSupplier.java)
+  - [long supplier](https://github.com/openjdk/jdk/blob/master/src/java.base/share/classes/java/util/function/LongSupplier.java)
+  - [boolean supplier](https://github.com/openjdk/jdk/blob/master/src/java.base/share/classes/java/util/function/BooleanSupplier.java)
+  - [double supplier](https://github.com/openjdk/jdk/blob/master/src/java.base/share/classes/java/util/function/DoubleSupplier.java)
+  - [int supplier](https://github.com/openjdk/jdk/blob/master/src/java.base/share/classes/java/util/function/IntSupplier.java)
 - Some of the [Collector](https://github.com/openjdk/jdk/blob/master/src/java.base/share/classes/java/util/stream/Collectors.java) class methods expect `Supplier<T>` input:
-    - `toCollection`
-    - `boxSupplier`
-    - `groupingBy`
-    - `toMap` and so on.
-    - there are implementations in the Collector class also using `Supplier<T>` interface.
+  - `toCollection`
+  - `boxSupplier`
+  - `groupingBy`
+  - `toMap` and so on.
+  - there are implementations in the Collector class also using `Supplier<T>` interface.
 - The [Stream](https://github.com/openjdk/jdk/blob/master/src/java.base/share/classes/java/util/stream/Stream.java) interface also have a few methods expecting `Supplier<T>` argument, like:
-    - `generate`
+  - `generate`
 
 ## Fun
 
@@ -48,10 +48,7 @@ In the provided code we are going to add few suppliers to a class via its builde
 and when it is built these suppliers will be executed and the result printed out.
 
 The interface
-[!code-java[](../../../../../../langs/java/src/main/java/com/andrascsanyi/functional_programming/supplier/Name.java)]
 
 The implementation
-[!code-java[](../../../../../../langs/java/src/main/java/com/andrascsanyi/functional_programming/supplier/NameImpl.java)]
 
 Test and usage
-[!code-java[](../../../../../../langs/java/src/test/java/com/andrascsanyi/functional_programming/supplier/NameTest.java)]

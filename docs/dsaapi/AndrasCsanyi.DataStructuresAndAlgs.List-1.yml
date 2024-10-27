@@ -3,7 +3,7 @@ title: Class List<T>
 body:
 - api1: Class List<T>
   id: AndrasCsanyi_DataStructuresAndAlgs_List_1
-  src: https://github.com/Andras-Csanyi/software_engineering/blob/article3/langs/csharp/Core/DataStructuresAndAlgs/List.cs#L3
+  src: https://github.com/Andras-Csanyi/software_engineering/blob/blog13/docs/src/csharp/Core/DataStructuresAndAlgs/List.cs#L3
   metadata:
     uid: AndrasCsanyi.DataStructuresAndAlgs.List`1
     commentId: T:AndrasCsanyi.DataStructuresAndAlgs.List`1
@@ -47,7 +47,7 @@ body:
 - h2: Methods
 - api3: Add(T)
   id: AndrasCsanyi_DataStructuresAndAlgs_List_1_Add__0_
-  src: https://github.com/Andras-Csanyi/software_engineering/blob/article3/langs/csharp/Core/DataStructuresAndAlgs/List.cs#L5
+  src: https://github.com/Andras-Csanyi/software_engineering/blob/blog13/docs/src/csharp/Core/DataStructuresAndAlgs/List.cs#L5
   metadata:
     uid: AndrasCsanyi.DataStructuresAndAlgs.List`1.Add(`0)
     commentId: M:AndrasCsanyi.DataStructuresAndAlgs.List`1.Add(`0)
