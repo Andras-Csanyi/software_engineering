@@ -4,7 +4,7 @@
       "src": [
         {
           "files": ["DataStructuresAndAlgs/DataStructuresAndAlgs.csproj"],
-          "src": "../langs/csharp/Core/"
+          "src": "src/csharp/Core"
         }
       ],
       "dest": "dsaapi",
