@@ -10,14 +10,10 @@ Android developers for a new feature we are going to release sometime in the fut
 The task included implementing a certain logic already exist in the frontend and bringing it
 back to the backend and being to some extent a Backend-for-Fronted for the Android folks.
 One of the logic included calculating average values.
-Since I was mentally off due to other reasons (there was another really serious and escalated
+Since I was mentally off due to other reasons ([there was another really serious and escalated
 issue I dealt with and it fucked up my brain royally... this is a different story for another
-day) I just blindly implemented the logic I saw in the frontend code (typescript).
+day]("https://x.com/csanyi_andras/status/1849850404307083592") I just blindly implemented the logic I saw in the frontend code (typescript).
 My plan was to have a code with tests and after shaping it in java correctly.
-
-My mental state at the end of the week is described perfectly by the following tweet.
-
-![My mental state](/blog/2024/2024_10_27_java_atomic/media/twitter.png)
 
 # Story
 
