@@ -12,7 +12,7 @@ back to the backend and being to some extent a Backend-for-Fronted for the Andro
 One of the logic included calculating average values.
 Since I was mentally off due to other reasons ([there was another really serious and escalated
 issue I dealt with and it fucked up my brain royally... this is a different story for another
-day]("https://x.com/csanyi_andras/status/1849850404307083592") I just blindly implemented the logic I saw in the frontend code (typescript).
+day](https://x.com/csanyi_andras/status/1849850404307083592) I just blindly implemented the logic I saw in the frontend code (typescript).
 My plan was to have a code with tests and after shaping it in java correctly.
 
 # Story
@@ -25,13 +25,13 @@ The point is declaring an `Integer` and update it in the loop.
 This does not compile as the compiler expects the updated integer in the loop to be `final` or
 effectively final.
 
-[!code-java[](src/demo/src/test/java/com/example/demo/Logic.java#L8-L18)]
+[!code-java[](src/demo/src/test/java/com/example/demo/Logic.java#L9-L17)]
 
 IntelliJ instantly offers converting the `Integer` to `AtomicInteger`.
 This is what I did and the code did not change a lot as you can see.
 The code below compiles and does the job.
 
-[!code-java[](src/demo/src/test/java/com/example/demo/Logic.java#L20-L30)]
+[!code-java[](src/demo/src/test/java/com/example/demo/Logic.java#L21-L29)]
 
 But, there is a problem with this code.
 The fact that there is an `AtomicInteger` there it suggest there is some multithreading here.
@@ -60,7 +60,7 @@ The final solution is using java streams to sum the values from the input list a
 value.
 The snippet below shows this solution.
 
-[!code-java[](src/demo/src/test/java/com/example/demo/Logic.java#L32-L42)]
+[!code-java[](src/demo/src/test/java/com/example/demo/Logic.java#L33-L41)]
 
 # Lessons learned
 
