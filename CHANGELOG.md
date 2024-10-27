@@ -1,3 +1,10 @@
+# [0.13.0](https://github.com/Andras-Csanyi/software_engineering/compare/0.12.2...0.13.0) (2024-10-27)
+
+
+### Features
+
+* java atomic article [#43](https://github.com/Andras-Csanyi/software_engineering/issues/43) ([38aead6](https://github.com/Andras-Csanyi/software_engineering/commit/38aead6ae362caf811c2d4ae8ec08a3a585e65e2))
+
 ## [0.12.2](https://github.com/Andras-Csanyi/software_engineering/compare/0.12.1...0.12.2) (2024-10-27)
 
 
