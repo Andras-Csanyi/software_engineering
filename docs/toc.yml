@@ -1,6 +1,6 @@
 - name: Blog
   href: blog/
 - name: Book
-  href: software_engineering/
+  href: software_engineering_book/
 - name: Data Structures and Algs Api
   href: dsaapi/
