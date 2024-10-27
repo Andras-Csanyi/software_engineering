@@ -17,7 +17,7 @@ My plan was to have a code with tests and after shaping it in java correctly.
 
 My mental state at the end of the week is described perfectly by the following tweet.
 
-![My mental state](media/twitter.png)
+![My mental state](/blog/2024/2024_10_27_java_atomic/media/twitter.png)
 
 # Story
 
