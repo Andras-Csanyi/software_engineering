@@ -2,3 +2,5 @@
   href: introduction.md
 - name: Functional programming
   href: functional_programming/toc.yml
+- name: Java Streams
+  href: streams/toc.yml
