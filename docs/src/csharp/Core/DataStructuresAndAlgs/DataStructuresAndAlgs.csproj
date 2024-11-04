@@ -1,11 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net8.0</TargetFramework>
+        <AssemblyName>AndrasCsanyi.DataStructuresAndAlgs</AssemblyName>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <AssemblyName>AndrasCsanyi.DataStructuresAndAlgs</AssemblyName>
         <RootNamespace>AndrasCsanyi.DataStructuresAndAlgs</RootNamespace>
+        <TargetFramework>net8.0</TargetFramework>
     </PropertyGroup>
 
 </Project>
