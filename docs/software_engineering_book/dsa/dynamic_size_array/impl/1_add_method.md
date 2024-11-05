@@ -9,7 +9,7 @@ The first thing to be implemented is the `Add` method.
 
 The following snippet shows the result interface of creating the `Add` method and some
 arbitrary methods for better testing.
-The relevant merge request is this one.
+The relevant merge request is [this](https://github.com/Andras-Csanyi/software_engineering/pull/48) one.
 
 ```csharp
 namespace AndrasCsanyi.DataStructuresAndAlgs.DynamicSizeArray;
