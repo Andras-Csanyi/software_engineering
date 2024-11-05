@@ -401,3 +401,8 @@ docs/_site
 
 *.bkp
 *.DS_Store
+
+# java related files
+target/
+.settings/
+.idea/
