@@ -404,4 +404,5 @@ docs/_site
 
 # java related files
 target/
-.seettings/
+.settings/
+.idea/
