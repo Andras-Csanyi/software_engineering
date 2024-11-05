@@ -1,3 +1,10 @@
+# [0.14.0](https://github.com/Andras-Csanyi/software_engineering/compare/0.13.4...0.14.0) (2024-11-05)
+
+
+### Features
+
+* DynamicSizeArray add and get method and the article about it ([#48](https://github.com/Andras-Csanyi/software_engineering/issues/48)) ([0bf5106](https://github.com/Andras-Csanyi/software_engineering/commit/0bf5106d1200c1145de0307fd9067d27ac302a33))
+
 ## [0.13.4](https://github.com/Andras-Csanyi/software_engineering/compare/0.13.3...0.13.4) (2024-10-27)
 
 
