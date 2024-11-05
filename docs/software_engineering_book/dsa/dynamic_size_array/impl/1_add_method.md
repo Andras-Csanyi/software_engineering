@@ -104,7 +104,17 @@ array due to the zero indexing nature of the whole shebang. It means that when w
 on the index `0` it means we have `1` item in the array and that the slot under the `1` is
 available.
 
-The other scenario is when array size management is needed.
+The other scenario is when array size management is needed. The first step here
+is creating a new array with the increased size. The default strategy is
+doubling the size of the previous array. At this point we need the
+`_storageAllocatedSize` to know what is the size we are looking for. The next
+step is copying all items from the old `_storage` to the new one. Here we have
+to pay attention to that the index values must be the same. However, just simply
+iterating through the array is fine. The next step is setting the variable
+values controlling the inner workings of the `DynamicSizeArray` like
+`_amountOfElementsInTheStorage`, `_storageAllocatedSize` and overwriting the old
+`_storage` variable with the new one. At this point the `DynamicSizeArray`
+increased its size and behaves like nothing happened.
 
 `DynamicSizeArray.cs` file
 
@@ -184,4 +194,108 @@ public partial class DynamicSizeArray<T>
     }
 }
 
+```
+
+## Get method
+
+In order to make the `DynamicSizeArray` easy to test I added the `Get(int
+index)` method. It returns the element under the provided index value.
+The input is validated in order to throw a controlled exception and not either
+returning the given `T` type `default` value or `IndexOutOfBoundException`. For
+the users this `DynamicSizeArray` is not bigger then all the items they put into
+it. They don't have to know about that the array is actually bigger.
+
+# Tests
+
+## Defaults
+
+The code below tests if the `DynamicSizeArray` underlying array got created with
+the correct allocation size. The default size is an implementation detail, but
+made available for testing purposes.
+
+```csharp
+    [Fact]
+    public void DefaultStorageSize()
+    {
+        DynamicSizeArray<int> dsa = new();
+        dsa.StorageSize().Should().Be(dsa.StorageDefaultSize());
+    }
+```
+
+The following test checks if the volume of elements in the array (what the user
+put into it) is zero right after instantiation.
+
+```csharp
+    [Fact]
+    public void DefaultElemSize()
+    {
+        DynamicSizeArray<int> dsa = new();
+        dsa.Count().Should().Be(0);
+    }
+```
+
+## Add method
+
+The following test checks what happens when an element is added to the array,
+but it doesn't trigger size management. Once the element is added the `Count()`
+and `StorageSize()` values are checked if the expected behaviour is there.
+The `for` loop is for checking if the element indeed in the array.
+
+```csharp
+    [Fact]
+    public void AddElem()
+    {
+        DynamicSizeArray<int> su = new();
+        su.Add(11);
+
+        su.Count().Should().Be(1);
+        su.StorageSize().Should().Be(8);
+        for (int i = 0; i < su.Count(); i++)
+        {
+            su.Get(i).Should().Be(11);
+        }
+    }
+```
+
+The test below tests the scenario where a size management event happens. First,
+a new `DynamicSizeArray` is created and it is filled up with elements to the
+point when size management is not triggered yet. The inner workings are checked
+at this point. As a next step and new item is added and right after the
+`StorageSize` (this has to be doubled compared to the previous one) and
+`Count()` checked. The `Count()` value must show that a new item has been added
+to the array, so its value got increased by one.
+
+## Get method
+
+The following test is a quite simple one. The functionality of adding an element
+and getting it back is checked.
+
+```csharp
+    [Fact]
+    public void ReturnItem()
+    {
+        int testValue = 11;
+        DynamicSizeArray<int> su = new();
+        su.Add(testValue);
+
+        su.Get(0).Should().Be(testValue);
+    }
+```
+
+The following test is about testing the validation of the `Get` method. If the
+requested index is higher than the elements in the array an exception will be
+thrown.
+
+```csharp
+    [Fact]
+    public void Throw_WhenIndexOutOfRange()
+    {
+        DynamicSizeArray<int> su = new();
+        su.Add(11);
+
+        su.Get(0).Should().Be(11);
+
+        Action action = () => su.Get(1);
+        action.Should().ThrowExactly<ArgumentOutOfRangeException>();
+    }
 ```
