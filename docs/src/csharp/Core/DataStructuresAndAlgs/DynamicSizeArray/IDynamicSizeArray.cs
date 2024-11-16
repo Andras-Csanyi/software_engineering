@@ -33,4 +33,11 @@ public interface IDynamicSizeArray<T>
     /// </summary>
     /// <returns>The amount of elements in the Dynamic Size Array.</returns>
     int Count();
+
+    /// <summary>
+    /// Removes the item at the designated index in the dynamically sized array.
+    /// Every item after the designated item will be shifted left by 1, meaning their index will be reduces by one.
+    /// </summary>
+    /// <param name="index">The index to be removed.</param>
+    void RemoveAt(int index);
 }
