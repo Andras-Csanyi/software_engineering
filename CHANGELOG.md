@@ -1,3 +1,10 @@
+# [0.15.0](https://github.com/Andras-Csanyi/software_engineering/compare/0.14.0...0.15.0) (2024-11-17)
+
+
+### Features
+
+* Living in the LLM hype article ([#49](https://github.com/Andras-Csanyi/software_engineering/issues/49)) ([88b1926](https://github.com/Andras-Csanyi/software_engineering/commit/88b192601e089273817751873b3217b8133ea69c))
+
 # [0.14.0](https://github.com/Andras-Csanyi/software_engineering/compare/0.13.4...0.14.0) (2024-11-05)
 
 
