@@ -4,7 +4,7 @@ title: Living in the LLM hype
 
 > [!NOTE]
 > This is the strong draft version of an article published on X with the
-> [Living in the LLMhype](https://x.com/csanyi_andras/status/1858136157504016666)
+> [Living in the LLM hype](https://x.com/csanyi_andras/status/1858136157504016666)
 > title. If you like this content please read the article on X it
 > shows your support to continue writing articles like this. Thank you!
 
@@ -14,7 +14,7 @@ It is just endlessly stupid and many times I have the feeling they don't even
 think just repeat the marketing stupidity they hear.
 As a balance I am writing down clearly what I am going to do and why.
 
-![art tweet](images/art_tweet/png)
+![art tweet](images/art_tweet.png)
 
 The whole is about LLMs and not what AI can do in video and music, or even
 Tesla's FSD. These are different stories and don't impact me directly.
