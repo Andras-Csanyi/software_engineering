@@ -9,7 +9,9 @@ Recently I started working on a programming language and you may ask "why?".
 
 Because it sucks.
 
-> [!Note] > [Please read this article on X and this way support me](https://x.com/csanyi_andras/status/1860672457331372294). Thank you!
+> [!NOTE]
+> [Please read this article on X and this way support me](https://x.com/csanyi_andras/status/1860672457331372294).
+> Thank you!
 
 Sucks mean effort, the necessity of thinking and that your brain has to work.
 Your knowledge has to be exercised and extended, changed in many and new ways to solve problems.
