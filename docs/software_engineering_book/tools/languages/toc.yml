@@ -4,3 +4,5 @@
   href: c_sharp/toc.yml
 - name: Java
   href: java/toc.yml
+- name: PotatoLang
+  href: potatolang/toc.yaml

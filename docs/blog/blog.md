@@ -3,6 +3,7 @@ title: Catalog
 description: Catalog of blog entries
 ---
 
+- [2024-11-24: Potato - baby steps](/blog/2024/2024-11-24-potato-baby-steps/article.html)
 - [2024-11-24: Because it sucks](/blog/2024/2024-11-24-because-it-sucks/because_it_sucks.html)
 - [2024-11-16: Living in the LLM hype](/blog/2024/2024_11_16_living_in_llm_hype/article.html)
 - [2024-10-27: Java's Atomic Integer](/blog/2024/2024_10_27_java_atomic/article.html)
