@@ -9,6 +9,10 @@ I have learned so far doing this thing.
 
 The code for this article is [here](https://github.com/PotatoLang/Potato/pull/2).
 
+> [!NOTE]
+> This [article exists on X](https://x.com/csanyi_andras/status/1860724649035743625)
+> and please read it there and by doing so supporting me.
+
 I worked on the lexer and parser part of the language in the last a few days and
 I wanted to achieve that the following assignments are working:
 
