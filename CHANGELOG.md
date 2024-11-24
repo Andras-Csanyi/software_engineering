@@ -1,3 +1,10 @@
+## [0.16.2](https://github.com/Andras-Csanyi/software_engineering/compare/0.16.1...0.16.2) (2024-11-24)
+
+
+### Bug Fixes
+
+* article fixes [#53](https://github.com/Andras-Csanyi/software_engineering/issues/53) ([4a869d4](https://github.com/Andras-Csanyi/software_engineering/commit/4a869d488bd3904ffae6905310bb47451649616d))
+
 ## [0.16.1](https://github.com/Andras-Csanyi/software_engineering/compare/0.16.0...0.16.1) (2024-11-24)
 
 
