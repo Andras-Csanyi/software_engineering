@@ -2,6 +2,9 @@
 title: Introduction to PotatoLang
 ---
 
+> [!NOTE]
+> This page is constantly changing
+
 # Idea
 
 After reading "Writing an interpreter in Go" and the "Writing a compiler in Go"
@@ -21,7 +24,7 @@ on one hand fun, and on the other very beneficial in learnings.
 The goal is learning and gaining further experience in programming and possible
 solutions.
 
-# Goal
+# Goal and roadmap
 
 Later in this article you'll find the specification of the language I am going
 to work on.
@@ -58,37 +61,35 @@ Which is a great experience as I have to think through what I am going to do and
 what impacts it might have.
 An amazing thinking pattern to master.
 
+## Types
+
+At types there will be a little bit of mess up.
+I don't like dynamically typed languages, so I am not going to create one.
+According to the books a dynamically typed one is easier than a statically
+typed, but fuck it... I do whatever the fuck I want to do.
+
+On the other hand, the types I am going to create has their own pairs in `C#`,
+so I am not going to create any magic.
+But, what is the `Integer` in Potato, it is the `int` in `C#`.
+From this point of view using Java would be more beneficial, but java is job and
+not love.
+This might cause some issues later, but I don't see these now.
+
+Potato is going to have the following types:
+
+- `Integer`, with the capital `I`, is an `Integer` object and corresponds to `C#`'s
+  `Int32` type which is the primitive integer `int`.
+- `String`, with the capital `S`, is a `String` object and corresponds to `C#`'s
+  primitive `string` type.
+- `Boolean`, with the capital `B`, it is a `Boolean` object and corresponds to
+  `C#`'s `bool` type.
+
+## Assignment
+
+Examples are below:
+
 ```csharp
-var myIntegerLookingVariable = 3;
-
-var myStringLookingVariable = "this is a string";
-
-var myVariableFromExpression = 3 * (2 + 6);
-
-var myIntegerArrayLookingStructure = [1, 2, 3];
-var myValueFromArrayByIndex = myIntegerArrayLookingStructure[0]; // ==> 1
-
-var myStringArrayLookingStructure = ["asd", "bsd", "csd" ];
-var myValueFromStringArrayByIndex = myStringArrayLookingStructure[0]; // ==>
-"asd"
-
-var hashMapLookingStructure = { "name" : "Andras", "age": 40 };
-var nameFromHashMap => hashMapLookingStructure[0]; // ==> "Andras"
-
-var bindingFunction => function(string a, string b) {return a + b;};
-bindingFunction(1, 2); // returns 3
-
-// recursive call
-var recursiveMethod => function(integer number) { recursiveMethod(value);}
-
-// control structures
-if(a > b)
-{
-  // whatever
-}
-
-for(var i = 0; i < len(stringArray); i++)
-{
-  // whatever
-}
+String stringIdentifier = "something string";
+Integer integerIdentifier = 123;
+Boolean booleanIdentifier = true;
 ```
