@@ -5,7 +5,7 @@ title: Potato - basic assignments
 It's time for a small victory lap and justify my viewpoint by just listing what
 I have learned so far doing this thing.
 
-[!Potato](images/potato.gif)
+![Potato](images/potato.gif)
 
 The code for this article is [here](https://github.com/PotatoLang/Potato/pull/2).
 
