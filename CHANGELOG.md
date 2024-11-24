@@ -1,3 +1,10 @@
+# [0.17.0](https://github.com/Andras-Csanyi/software_engineering/compare/0.16.4...0.17.0) (2024-11-24)
+
+
+### Features
+
+* PotatoLang baby steps article ([#56](https://github.com/Andras-Csanyi/software_engineering/issues/56)) ([a5e29ac](https://github.com/Andras-Csanyi/software_engineering/commit/a5e29acdd067cc2850e890102b5a28adf2a41017))
+
 ## [0.16.4](https://github.com/Andras-Csanyi/software_engineering/compare/0.16.3...0.16.4) (2024-11-24)
 
 
