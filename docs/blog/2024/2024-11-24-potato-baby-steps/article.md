@@ -2,7 +2,8 @@
 title: Potato - basic assignments
 ---
 
-It's time for a small victory lap and justify my viewpoint.
+It's time for a small victory lap and justify my viewpoint by just listing what
+I have learned so far doing this thing.
 
 [!Potato](images/potato.gif)
 
