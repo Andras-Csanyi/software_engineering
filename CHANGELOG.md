@@ -1,3 +1,10 @@
+# [0.16.0](https://github.com/Andras-Csanyi/software_engineering/compare/0.15.1...0.16.0) (2024-11-24)
+
+
+### Features
+
+* Because it sucks - article [#51](https://github.com/Andras-Csanyi/software_engineering/issues/51) ([f0c2d95](https://github.com/Andras-Csanyi/software_engineering/commit/f0c2d9560f1c88b5495bc935463194bca8cae618))
+
 ## [0.15.1](https://github.com/Andras-Csanyi/software_engineering/compare/0.15.0...0.15.1) (2024-11-17)
 
 
