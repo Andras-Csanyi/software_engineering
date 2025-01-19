@@ -3,6 +3,7 @@ title: Catalog
 description: Catalog of blog entries
 ---
 
+- [2025-01-19: PotatoLang parser - first version of precedence parsing](/blog/2025/2025_01_18_parsing_variable_assignment_expressions/article.html)
 - [2024-11-24: Potato - baby steps](/blog/2024/2024-11-24-potato-baby-steps/article.html)
 - [2024-11-24: Because it sucks](/blog/2024/2024-11-24-because-it-sucks/because_it_sucks.html)
 - [2024-11-16: Living in the LLM hype](/blog/2024/2024_11_16_living_in_llm_hype/article.html)
