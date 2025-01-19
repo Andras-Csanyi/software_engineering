@@ -3,6 +3,8 @@ title: Parsing variable assignment expressions
 description: Pratt parsers, expression parsing, programming language, parser 
 ---
 
+# The parser
+
 At this point I have the lexer (article drops soon) to parse the source code.
 The next step is to create the parser and I started it with parsing variable assignment expressions.
 
