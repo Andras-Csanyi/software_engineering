@@ -1,3 +1,15 @@
+# [0.18.0](https://github.com/Andras-Csanyi/software_engineering/compare/0.17.2...0.18.0) (2025-01-19)
+
+
+### Bug Fixes
+
+* link fix [#60](https://github.com/Andras-Csanyi/software_engineering/issues/60) ([eab82b5](https://github.com/Andras-Csanyi/software_engineering/commit/eab82b5cee7b94a0b27a8dcadf4ee2db7a1723fe))
+
+
+### Features
+
+* potato lang parser first version [#59](https://github.com/Andras-Csanyi/software_engineering/issues/59) ([3fb377b](https://github.com/Andras-Csanyi/software_engineering/commit/3fb377b7c3af0e091c71af6d1dc909193c26ba48))
+
 ## [0.17.2](https://github.com/Andras-Csanyi/software_engineering/compare/0.17.1...0.17.2) (2024-11-24)
 
 
